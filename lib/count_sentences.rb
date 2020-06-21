@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    self.scan(/[^\.?!]+[\.?!]/).count do |a| puts a
+    self.split(/[^\.?!]+[\.?!]/) do |a| puts a
     
   end
 end
